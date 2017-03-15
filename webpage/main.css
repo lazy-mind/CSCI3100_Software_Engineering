@@ -1,0 +1,26 @@
+body{
+	background: #666;
+	font-family:arial;
+}
+
+li{
+	color: white;
+}
+
+h1{
+	background: #333;
+	color:white;
+	padding: 10px 10px 10px 10px;
+}
+
+.number1, .number2, .number3{
+	background: #999;
+	color:silver;
+	padding: 10px 10px;
+}
+
+#special{
+	background: white;
+	color:black;
+
+}

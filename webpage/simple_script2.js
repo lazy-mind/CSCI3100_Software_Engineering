@@ -1,6 +1,5 @@
 alert ('the script is running');
 
-
 var birthday_message = {
 	firstname : "default",
 	lastname : "default",

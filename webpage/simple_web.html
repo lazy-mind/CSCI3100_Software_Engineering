@@ -1,13 +1,69 @@
+<!doctype html>
 <html>
-	<script src="simple_script2.js"></script>
+
 	<head>
-		<div>
-		this is the head
-		</div>
+		<title>initial_code</title>
 	</head>
+
+	
 	<body>
-		this is the body
+		<h1>
+			<em>this is the HTML Page header</em>
+		</h1>
+
+		<div id='firstline'>
+			this is the <strong>first line</strong>
+		</div>
+		<div id='secondline'>
+			this is the <em>body</em>
+		</div>
+
+		<p>
+			this is praragraph 1
+		</p>
+		<p>
+			this is praragraph 2
+		</p>
+
+		<div id='hyperlink'>
+			<a href="http://www.google.com">www.google.com</a>
+		</div>
+		<div id='image'>
+			<img src="http://www.cse.cuhk.edu.hk/lyu/_media/wiki/lyu.jpg?cache=cache">
+		</div>
+
+		<div id='different_page'>
+			<ul>
+				<li><a href="simple_web.html">Home</a></li>
+				<li><a href="list_page.html">Learn_list</a></li>
+				<li><a href="testing_page.html">testing_page</a></li>
+				<li><a href="css_style.html">css_style</a></li>
+			</ul>
+		</div>
+
+	
+
+		<div class="bottom">
+			<h3>here is all the bottom</h3>
+			<button id='bottom1'>hide 1st line</button>
+			<button id='bottom2'>hide 2st line</button>
+		</div>
+
 	</body>
-	<script src="simple_script.js"></script>
+	
+	<script src="jquery.js"></script>
+	
+	<script>
+		$(function(){
+			//alert("it is going to hide")
+			$('#firstline').hide(300).show(1000);
+			//sleep(5);
+			$('#secondline').hide(300).show(1000);
+			//$('#secondline').delay(1000).slideUp(1000).slideDown(1000);
+			$('#bottom1').on('click',function(){
+ 				$('firstline').hide(500);
+			});
+		});
+	</script>
 
 </html>
