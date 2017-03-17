@@ -1,0 +1,279 @@
+<!doctype html>
+<html>
+	<!--the header content-->
+	<head>
+		<title>Bootstrap tryout</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	</head>
+
+	<body>
+		
+
+		<!--a bootstrap code for the navigation bar above-->
+		<header class="navbar-default">
+			<div class="container">
+				<nav class="navbar navbar-default">
+				  <div class="container-fluid">
+				    <!-- Brand and toggle get grouped for better mobile display -->
+				    <div class="navbar-header">
+				      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+				      <a class="navbar-brand" href="#">Brand</a>
+				    </div>
+
+				    <!-- Collect the nav links, forms, and other content for toggling -->
+				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				      <ul class="nav navbar-nav">
+				        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+				        <li><a href="#">Link</a></li>
+				        <li class="dropdown">
+				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+				          <ul class="dropdown-menu">
+				            <li><a href="#">Action</a></li>
+				            <li><a href="#">Another action</a></li>
+				            <li><a href="#">Something else here</a></li>
+				            <li role="separator" class="divider"></li>
+				            <li><a href="#">Separated link</a></li>
+				            <li role="separator" class="divider"></li>
+				            <li><a href="#">One more separated link</a></li>
+				          </ul>
+				        </li>
+				      </ul>
+				      <form class="navbar-form navbar-left">
+				        <div class="form-group">
+				          <input type="text" class="form-control" placeholder="Search">
+				        </div>
+				        <button type="submit" class="btn btn-default">Submit</button>
+				      </form>
+				      <ul class="nav navbar-nav navbar-right">
+				        <li><a href="#">Link</a></li>
+				        <li class="dropdown">
+				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+				          <ul class="dropdown-menu">
+				            <li><a href="#">Action</a></li>
+				            <li><a href="#">Another action</a></li>
+				            <li><a href="#">Something else here</a></li>
+				            <li role="separator" class="divider"></li>
+				            <li><a href="#">Separated link</a></li>
+				          </ul>
+				        </li>
+				      </ul>
+				    </div><!-- /.navbar-collapse -->
+				  </div><!-- /.container-fluid -->
+				</nav>
+			</div>
+		</header>
+
+		<!--adding hide and show content in different panel-->
+		<ul class="tabs">
+			<a class="btn btn-primary" href="#" role="button">page1</a>
+			<a class="btn btn-primary" href="#" role="button">page2</a>
+			<a class="btn btn-primary" href="#" role="button">page3</a>
+			<a class="btn btn-primary" href="#" role="button">page4</a>
+		</ul>
+
+		<div id="page1" class="trypanel active">
+			content1<br>
+			content1<br>
+			content1<br>
+			content1<br>
+			content1<br>
+		</div>
+
+		<div id="page2" class="trypanel">
+			content2<br>
+			content2<br>
+			content2<br>
+			content2<br>
+			content2<br>
+		</div>
+
+		<div id="page3" class="trypanel">
+			content3<br>
+			content3<br>
+			content3<br>
+			content3<br>
+			content3<br>
+		</div>
+
+		<div id="page4" class="trypanel">
+			content4<br>
+			content4<br>
+			content4<br>
+			content4<br>
+			content4<br>
+		</div>
+
+
+		<!--adding a panel part to try out jquery effect-->
+		<div class="container">
+			<div id="four_panel">
+				<!--it is a responsive layout-->
+				<div class="col-sm-3 col-xs-12">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							Post 1
+							<a class="btn btn-success" href="#" role="button">fold</a>
+						</div>
+						<div class="panel-body">
+							<strong><span class="text-danger">1</span></strong><br><br>
+							<strong>post content 1</strong><br><br>
+							<a class="btn btn-primary" href="#" role="button">resolve</a>
+							<a class="btn btn-primary" href="#" role="button">unresolve</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-xs-12">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							Post 2
+							<a class="btn btn-success" href="#" role="button">fold</a>
+						</div>
+						<div class="panel-body">
+							<strong><span class="text-danger">2</span></strong><br><br>
+							<strong>post content 2</strong><br><br>
+							<a class="btn btn-primary" href="#" role="button">resolve</a>
+							<a class="btn btn-primary" href="#" role="button">unresolve</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-xs-12">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							Post 3
+							<a class="btn btn-success" href="#" role="button">fold</a>
+						</div>
+						<div class="panel-body">
+							<strong><span class="text-danger">3</span></strong><br><br>
+							<strong>post content 3</strong><br><br>
+							<a class="btn btn-primary" href="#" role="button">resolve</a>
+							<a class="btn btn-primary" href="#" role="button">unresolve</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-xs-12">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							Post 4
+							<a class="btn btn-success" href="#" role="button">fold</a>
+						</div>
+						<div class="panel-body">
+							<strong><span class="text-danger">4</span></strong><br><br>
+							<strong>post content 4</strong><br><br>
+							<a class="btn btn-primary" href="#" role="button">resolve</a>
+							<a class="btn btn-primary" href="#" role="button">unresolve</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--show how to modify the content-->
+		<main>
+			<ul id="checklist">
+				<li>
+					<span><strong>notification1</strong></span>
+					<input value="Apples" />
+				</li>
+				<li>
+					<span><strong>notification2</strong></span>
+					<input value="Orange" />
+				</li>
+				<li>
+					<span><strong>notification3</strong></span>
+					<input value="Bananas" />
+				</li>
+			</ul>
+		</main>
+
+		
+		<!--adding a input user name and password part-->
+		<div class="container">	
+			<div class="user_log_in">
+				<p>Please enter your user name    : <input id="user_name_login"></p>	
+				<p>Please enter your user password: <input id="user_password_login"></p>	
+				<p id="confirmation_message"></p>
+				<p id="confirmation_message2"></p>
+				<p id="confirmation_message3"></p>
+			</div>
+		</div>
+
+		<!--adding the widget part-->
+		<div class="container">
+			<div class="row2">
+				<!--it is a responsive layout-->
+				<div class="col-sm-6 col-xs-12">
+					<div class="panel panel-primary">
+						<div class="panel-heading">Latest Activity</div>
+						<div class="panel-body">
+							<strong><span class="text-danger">My Activity</span></strong><br><br>
+							<strong>here is the activity content from user input</strong><br><br>
+							<a class="btn btn-primary" href="#" role="button">post</a>
+							<a class="btn btn-primary" href="#" role="button">share</a>
+						</div>
+
+					</div>
+				</div>
+				<div class="col-sm-3 col-xs-6">
+					<div class="panel panel-danger">
+						<div class="panel-heading"><strong>What's new</strong></div>
+						<div class="panel-body">display the selected content for user</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-xs-6">
+					<div class="panel panel-success">
+						<div class="panel-heading"><strong>Chat</strong></div>
+						<div class="panel-body">here is people chating with each other</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!--try out box shadow-->
+		<div class="web_content">
+			<div class="content_heading">The comment title</div>
+			<div class="content_text">The content</div>
+			<div class="show_on_hover">
+				<a class="btn btn-primary" href="" role="button">reply</a>
+				<a class="btn btn-danger" href="" role="button">delete</a>
+			</div>
+		</div>
+
+		<div class="web_content">
+			<div class="content_heading">The comment title</div>
+			<div class="content_text">The content</div>
+			<div class="show_on_hover">
+				<a class="btn btn-primary" href="#" role="button">reply</a>
+				<a class="btn btn-danger" href="#" role="button">delete</a>
+			</div>
+		</div>
+
+		<div class="web_content">
+			<div class="content_heading">The comment title</div>
+			<div class="content_text">The content</div>
+			<div class="show_on_hover">
+				<a class="btn btn-primary" href="#" role="button">reply</a>
+				<a class="btn btn-danger" href="#" role="button">delete</a>
+			</div>
+		</div>
+
+		<!-- import the Jquery code to make the botton live-->
+		<script src="https://code.jquery.com/jquery.js"></script>	
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+		<!--script src="ask_for_information.js"></script-->
+		<script src="jquery_effect.js"></script>
+	</body>
+</html>
